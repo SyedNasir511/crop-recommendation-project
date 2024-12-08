@@ -2,10 +2,10 @@ import pandas as pd
 import joblib
 from sklearn.metrics import accuracy_score
 
-model = joblib.load('KNNmodel.pkl')  # Ensure this is the model, not data
+model = joblib.load('Random Forestmodel.pkl')  # Ensure this is the model, not data
 
 # Load the test data
-test_data = pd.read_csv('Crop_recommendationlabel.csv')
+test_data = pd.read_csv('Crop_recommendation123.csv')
 
 # Assuming the last column is the target
 X_test = test_data.iloc[:, 0:7]
