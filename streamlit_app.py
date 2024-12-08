@@ -9,7 +9,7 @@ import joblib
 #     model = pickle.load(file)
 
 
-model = joblib.load('KNNmodel.pkl')  # Ensure this is the model, not data
+model = joblib.load('K-Nearest Neighbors model.pkl')  # Ensure this is the model, not data
 
 # Load and display accuracy
 with open('accuracy.txt', 'r') as file:
@@ -25,7 +25,7 @@ st.header("Real-Time Prediction")
 test_data = pd.read_csv('Crop_recommendation.csv')
 
 # Assuming the last column is the target
-X_test = test_data.iloc[:, :-2]
+X_test = test_data.iloc[:, :-1]
 y_test = test_data.iloc[:, -1]
 
 # Assume the model expects the same input features as X_test
